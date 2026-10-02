@@ -85,6 +85,7 @@
             <div class="hidden sm:flex items-center space-x-8 text-sm font-medium">
                 <a href="#about" class="text-muted hover:text-white transition">About</a>
                 <a href="#projects" class="text-muted hover:text-white transition">Projects</a>
+                <a href="#skills" class="text-muted hover:text-white transition">Skills</a>
                 <a href="#contact" class="text-muted hover:text-white transition">Connect</a>
             </div>
 
@@ -98,6 +99,7 @@
         <div id="mobile-menu" class="hidden sm:hidden bg-obsidian border-b border-border px-6 py-4 space-y-3 text-sm">
             <a href="#about" class="mobile-nav-item block text-muted hover:text-white py-1">About</a>
             <a href="#projects" class="mobile-nav-item block text-muted hover:text-white py-1">Projects</a>
+            <a href="#skills" class="mobile-nav-item block text-muted hover:text-white py-1">Skills</a>
             <a href="#contact" class="mobile-nav-item block text-muted hover:text-white py-1">Connect</a>
         </div>
     </nav>
@@ -106,12 +108,6 @@
         <section id="about" class="py-20 sm:py-28 border-b border-border">
             <div class="max-w-4xl mx-auto px-6 flex flex-col items-center text-center">
                 <div class="space-y-6 max-w-2xl flex flex-col items-center">
-                    <!-- ==========================================================================
-                         HEADSHOT IMAGE INSTRUCTIONS:
-                         1. Save your headshot image file as "headshot.jpg" in the root directory of your GitHub repository.
-                         2. Keep src="headshot.jpg" below.
-                         3. If the image file is not found, it automatically falls back to your initials "JL".
-                         ========================================================================== -->
                     <div class="relative w-32 h-32 sm:w-36 sm:h-36 rounded-full overflow-hidden border-2 border-border shadow-2xl bg-card">
                         <img 
                             src="headshot.jpg" 
@@ -158,6 +154,61 @@
             </div>
         </section>
 
+        <!-- Skills Section -->
+        <section id="skills" class="py-20 border-b border-border">
+            <div class="max-w-4xl mx-auto px-6">
+                <div class="mb-10 text-center sm:text-left">
+                    <h2 class="text-xs font-tech font-semibold tracking-widest text-muted uppercase mb-2">Capabilities</h2>
+                    <h3 class="text-2xl font-bold tracking-tight">Skills & Core Competencies</h3>
+                </div>
+
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                    <!-- Technical Skills Card -->
+                    <div class="p-6 rounded-lg bg-card border border-border">
+                        <div class="flex items-center space-x-3 mb-4">
+                            <div class="p-2 rounded bg-obsidian border border-border text-white">
+                                <i data-lucide="code" class="w-5 h-5"></i>
+                            </div>
+                            <h4 class="text-lg font-bold font-heading text-white">Technical Skills</h4>
+                        </div>
+                        <p class="text-xs text-muted leading-relaxed mb-6">
+                            Programming, database management, marketing analytics, and strategy tools.
+                        </p>
+                        <div class="flex flex-wrap gap-2">
+                            <span class="text-xs font-tech font-medium px-3 py-1.5 rounded-md bg-obsidian border border-border text-white">SQL</span>
+                            <span class="text-xs font-tech font-medium px-3 py-1.5 rounded-md bg-obsidian border border-border text-white">Java</span>
+                            <span class="text-xs font-tech font-medium px-3 py-1.5 rounded-md bg-obsidian border border-border text-white">Microsoft Excel (PHStat)</span>
+                            <span class="text-xs font-tech font-medium px-3 py-1.5 rounded-md bg-obsidian border border-border text-white">Marketing Analytics</span>
+                            <span class="text-xs font-tech font-medium px-3 py-1.5 rounded-md bg-obsidian border border-border text-white">Marketing Strategy</span>
+                            <span class="text-xs font-tech font-medium px-3 py-1.5 rounded-md bg-obsidian border border-border text-white">Data Modeling & Analytics</span>
+                            <span class="text-xs font-tech font-medium px-3 py-1.5 rounded-md bg-obsidian border border-border text-white">HTML / CSS / Tailwind</span>
+                        </div>
+                    </div>
+
+                    <!-- Professional Skills Card -->
+                    <div class="p-6 rounded-lg bg-card border border-border">
+                        <div class="flex items-center space-x-3 mb-4">
+                            <div class="p-2 rounded bg-obsidian border border-border text-white">
+                                <i data-lucide="briefcase" class="w-5 h-5"></i>
+                            </div>
+                            <h4 class="text-lg font-bold font-heading text-white">Professional Skills</h4>
+                        </div>
+                        <p class="text-xs text-muted leading-relaxed mb-6">
+                            Interpersonal and organizational capabilities for collaborative environments.
+                        </p>
+                        <div class="flex flex-wrap gap-2">
+                            <span class="text-xs font-tech font-medium px-3 py-1.5 rounded-md bg-obsidian border border-border text-white">Teamwork</span>
+                            <span class="text-xs font-tech font-medium px-3 py-1.5 rounded-md bg-obsidian border border-border text-white">Adaptability</span>
+                            <span class="text-xs font-tech font-medium px-3 py-1.5 rounded-md bg-obsidian border border-border text-white">Emotional Intelligence</span>
+                            <span class="text-xs font-tech font-medium px-3 py-1.5 rounded-md bg-obsidian border border-border text-white">Communication</span>
+                            <span class="text-xs font-tech font-medium px-3 py-1.5 rounded-md bg-obsidian border border-border text-white">Time Management</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Connect Section -->
         <section id="contact" class="py-20">
             <div class="max-w-4xl mx-auto px-6">
                 <div class="max-w-xl mx-auto text-center">
@@ -172,13 +223,13 @@
                             <i data-lucide="mail" class="w-4 h-4"></i>
                             <span>Email Me</span>
                         </a>
-                        <a href="https://github.com" target="_blank" rel="noopener noreferrer" class="px-5 py-2.5 bg-card border border-border text-white rounded-md hover:bg-border transition inline-flex items-center space-x-2">
-                            <i data-lucide="github" class="w-4 h-4"></i>
-                            <span>GitHub</span>
-                        </a>
-                        <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" class="px-5 py-2.5 bg-card border border-border text-white rounded-md hover:bg-border transition inline-flex items-center space-x-2">
+                        <a href="https://www.linkedin.com/in/joelhobinlee07" target="_blank" rel="noopener noreferrer" class="px-5 py-2.5 bg-card border border-border text-white rounded-md hover:bg-border transition inline-flex items-center space-x-2">
                             <i data-lucide="linkedin" class="w-4 h-4"></i>
                             <span>LinkedIn</span>
+                        </a>
+                        <a href="Joel Lee Resume-4.pdf" target="_blank" rel="noopener noreferrer" class="px-5 py-2.5 bg-card border border-border text-white rounded-md hover:bg-border transition inline-flex items-center space-x-2">
+                            <i data-lucide="file-text" class="w-4 h-4"></i>
+                            <span>Resume</span>
                         </a>
                     </div>
                 </div>
@@ -210,7 +261,6 @@
 
         /* ==========================================================================
            PROJECTS DATA ARRAY
-           Update the title, description, tags, and link URLs with your real projects!
            ========================================================================== */
         const projects = [
             {
